@@ -1,0 +1,341 @@
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{setspace}
+
+
+
+\setstretch{1.2}
+
+
+\begin{document}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/jain.png}
+\end{figure}
+\vspace{40pt}
+
+\begin{center}
+    \Large\bfseries MCA semester - IV Projects
+\end{center}
+
+\vspace{40pt}
+\begin{center}
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabularx}{\textwidth}{|X|X|} % Specify column formatting (centered and vertical lines)
+         \hline % Horizontal line
+        Name & Vaibhav Nayak \\ % Table content separated by "&" and ended with "\\" 
+        \hline
+        USN & 211VMTR01545 \\
+        \hline
+        Elective &  CS and IT\\
+        \hline
+        Date of submission& 18-08-2023 \\
+        \hline
+    \end{tabularx}
+
+\end{center}
+
+\newpage
+
+
+
+
+\vspace*{0.2cm}
+
+\begin{center}
+    
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/jain.png}
+\end{figure}
+\Large\bfseries September 2023 \\
+\vspace{10pt}
+\Large\bfseries Creating a Real time Editing application \\
+\vspace{30pt}
+\normalsize\bfseries Research Project submitted to Jain Online (Deemed-to-be University) 
+In partial fulfillment of the requirements for the award of \\
+\vspace{30pt}
+\Large\bfseries Master of Computer Applications \\
+\vspace{30pt}
+
+{\itshape submitted by} \\
+\vspace{10pt}
+\Large\bfseries Vaibhav Nayak \\
+\vspace{30pt}
+
+{\itshape USN }\\
+\vspace{10pt}
+\Large\bfseries 211VMTR01545 \\
+\vspace{30pt}
+
+{\itshape Under the guidance of} \\
+\vspace{10pt}
+\Large\bfseries Prof. Kavitha S. N.\\
+
+\end{center}
+
+
+\newpage
+\begin{center}
+    \LARGE\bfseries DECLARATION \\
+\end{center}
+
+\vspace{25pt}
+
+{\large I, Vaibhav Nayak, hereby declare that the Research Project Report titled “Real Time Editing” has been prepared by me under the guidance of Prof. Kavitha S. N. I declare that this Project work is towards the partial fulfillment of the University Regulations for the award of degree of Master of Computer Applications by Jain University, Bangalore. I have undergone a project for a period of Eight Weeks. I further declare that this Project is based on the original study undertaken by me and has not been submitted for the award of any degree/diploma from any other University / Institution.}
+
+\vspace{25pt}
+
+\begin{minipage}[t]{0.45\linewidth}
+    \raggedright % Align left
+    {\bfseries Place:} Bangalore \\
+    {\bfseries Date:} 18-08-2023
+\end{minipage}
+\hfill % Add horizontal space between minipages
+\begin{minipage}[t]{0.45\linewidth}
+    \raggedleft % Align right
+   {\bfseries Name:} Vaibhav Nayak \\
+    {\bfseries USN:} 211VMTR01545
+\end{minipage}
+
+
+\newpage
+\begin{center}
+    \LARGE\bfseries CERTIFICATE \\
+\end{center}
+
+\vspace{25pt}
+
+{\large This is to certify that the Project report submitted by Mr.Vaibhav Nayak bearing 211VMTR01545 on the title "Real Time Editing" is a record of project work done by him during the academic year 2023-24 under my guidance and supervision in partial fulfilment of Master of Computer Applications.}
+
+\vspace{25pt}
+
+\begin{minipage}[t]{0.45\linewidth}
+    \raggedright % Align left
+    {\bfseries Place:}  Bangalore    \\
+    {\bfseries Date:} 18-08-2023
+\end{minipage}
+\hfill % Add horizontal space between minipages
+\begin{minipage}[t]{0.45\linewidth}
+    \raggedleft % Align right
+   {\bfseries Faculty Guide:}  Prof. Kavitha S. N.\\
+    
+\end{minipage}
+
+
+\newpage
+\begin{center}
+    \LARGE\bfseries ACKNOWLEDGEMENT \\
+\end{center}
+
+\vspace{25pt}
+
+{\large I express deep gratitude to my dedicated faculty and mentor for their invaluable guidance and unwavering support throughout this project. Your insights and encouragement have been instrumental in completing this project.}
+
+\vspace{25pt}
+
+
+\hfill % Add horizontal space between minipages
+\begin{minipage}[t]{0.45\linewidth}
+    \raggedleft % Align right
+   {\bfseries Name:} Vaibhav Nayak \\
+    {\bfseries USN:} 211VMTR01545
+\end{minipage}ed by Mr./Ms. Name of the
+Student bearing (USN) on the title “Title of the project” is a record of project
+work done by him/ her during the academic year 2023-24 under my guidance and
+supervision in partial fulfilment of Master of Computer Applications.
+Place: Bangalore
+Date: 18-08-2023
+Faculty Guide: Prof. Kavitha S. N.
+4
+
+
+\newpage
+\begin{center}
+    \LARGE\bfseries Executive Summary \\
+\end{center}
+
+\vspace{25pt}
+
+{\Large\bfseries Creating a Full Stack Web Project using the MERN Stack \\}
+
+{\large In this project, I used React, MongoDB, express, and node.js to create an Real time Editing project. This summary encapsulates the essence of my journey in designing and implementing a full-stack solution.}
+
+\vspace{10pt}
+
+{\large  To create a real-time, multi-user document editing through a seamless
+interface. Using React, I created a user-friendly front-end that enabled effortless
+interactions and dynamic updates. The back-end, powered by Express.js and Node.js,
+seamless real-time communication, ensuring simultaneous edits were synchronized across
+users using web sockets. Used MongoDB as database to store data.
+}
+
+\vspace{10pt}
+
+{\large This app contains these key features}
+
+\begin{itemize}
+    \item {\bfseries Real-Time Collaboration:} Multiple users could coedit documents simultaneously, witnessing live updates across the platform.
+    \item {\bfseries Dynamic Synchronization:} Changes were seamlessly propagated in real time, creating a good editing experience.
+    \item {\bfseries User Authentication:} Robust authentication mechanisms ensured data privacy and authorized access to individual documents.
+    
+\end{itemize}
+
+\newpage
+
+\begin{center}
+    \LARGE\bfseries 1. INTRODUCTION, SCOPE AND BACKGROUND\\
+\end{center}
+
+{\Large\bfseries 1.1 Overview of Project Case \\}
+
+{\normalsize  The Real-Time Collaborative Document Editor project employs the MERN stack to develop a web application where users can edit documents together in real time. React-based front-end, and Express.js-powered back-end, the project ensures seamless synchronization of changes. Challenges, like concurrent editing, are implemented using web sockets.}
+
+\vspace{25pt}
+{\Large\bfseries 1.2 Problem definition \\}
+
+{\normalsize  
+The project addresses the challenge of enabling real-time collaborative document editing. It seeks to develop a web-based solution using the MERN stack, allowing multiple users to concurrently edit documents while ensuring synchronized updates and secure access controls. Projects contains dynamic front-end design and efficient back-end communication to overcome obstacles like concurrent editing conflicts and data consistency issues.}
+
+
+\vspace{25pt}
+
+
+
+
+\newpage
+
+\begin{center}
+    \LARGE\bfseries 2. REVIEW OF LITERATURE\\
+\end{center}
+
+
+
+{\normalsize  The Literature Review section in our Real-Time Editing project delves into existing research on collaborative real-time document editing. It explores concepts like simultaneous updates and data synchronization, summarizing studies on collaborative platforms and identifying gaps in data integrity methods. This review informs the development of our Real-Time Editor App by bridging these gaps while enhancing user experience. By analyzing and synthesizing current knowledge, I ensure my project aligns with industry practices, addressing challenges identified in the literature. This robust foundation validates our project's significance and positions it to contribute effectively to the advancement of real-time collaborative editing solutions.}
+
+
+
+\vspace{25pt}
+
+
+
+\newpage
+
+\begin{center}
+    \LARGE\bfseries 3. PROJECT PLANNING AND METHODOLOGY\\
+\end{center}
+
+{\Large\bfseries 3.1 Project Planning \\}
+
+{\normalsize  I developed a Real-Time Editing App using the MERN stack (MongoDB, Express.js, React, Node.js) and Socket.IO for seamless real-time collaboration. Leveraging React, the
+ user-friendly front-end allowed concurrent document editing by multiple users. The Express.js
+ and Node.js back-end facilitated real-time data synchronization, ensuring instant updates. Socket io enabled bidirectional communication, powering live collaboration. MongoDB managed
+ document storage, while user authentication ensured secure access. The project followed 
+Agile principles, including iterative development and continuous testing. Challenges, like 
+concurrent edit conflicts, were resolved through strategic planning. The result is an intuitive app that
+ revolutionizes collaborative document editing, showcasing the potential of MERN and Socket.IO
+ for dynamic, real-time applications.}
+
+\vspace{25pt}
+{\Large\bfseries 3.2 Methodology \\}
+
+{\normalsize  The project utilized an Agile methodology to develop the Real-Time Editing App
+ with the MERN stack and Socket.io . }
+
+\begin{itemize}
+    \item {\bfseries Design:} The User Interface (UI) design process involved creating intuitive and engaging React components, ensuring a seamless and responsive editing environment for collaborative users.
+
+
+    \item {\bfseries Development:}  Concurrently, I undertook the robust construction of the Express.js and Node.js back-end. Socket.IO integration facilitated real-time bidirectional communication, enabling live, synchronized collaboration among users.
+    
+\end{itemize}
+
+\vspace{25pt}
+
+
+
+
+\newpage
+
+\begin{center}
+\LARGE\bfseries 4. DESIGN \\
+\end{center}
+
+
+
+\begin{itemize}
+    \item {\bfseries Language :} JavaScript
+    \item  {\bfseries Library :} Node.js, Express.js, React,  axios, React-query, mongoose, socket.io, Tailwind css
+    \item {\bfseries Tool :} Vs code, git, and github, vercel
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{img/web-app.png}
+\end{figure}
+
+\vspace{25pt}
+
+
+
+
+\newpage
+
+\begin{center}
+    \LARGE\bfseries 5. RESULTS, FUTURE SCOPE and CONCLUSION\\
+\end{center}
+
+{\Large\bfseries 5.1 Results of the work \\}
+
+\begin{itemize}
+    \item {\bfseries Real-Time Collaboration: } Users can collaboratively edit documents simultaneously, with changes instantly reflected across all connected clients. Socket.IO's bidirectional communication ensures seamless data synchronization.
+
+    \item {\bfseries Intuitive User Experience:  } The application boasts an intuitive and responsive user interface (UI) designed using React components. Users can expect a fluid and engaging editing experience, with features such as shared cursors and real-time change highlighting.
+
+    \item {\bfseries Efficient Data Management:  } Leveraging the MERN stack, the app efficiently handles data storage, retrieval, and updates. MongoDB stores documents securely, while Express.js and Node.js facilitate smooth communication between users and the server.
+
+    \item {\bfseries Live Interaction:  } Socket.IO empowers live interaction, notifying users of ongoing edits and providing instant alerts. This fosters a sense of presence and engagement, making collaborative editing a seamless and interactive endeavor.
+
+    \item {\bfseries Secure Authentication:  } User authentication and access control mechanisms ensure document security and authorized access, maintaining the integrity of collaborative sessions.
+\end{itemize}
+
+\vspace{25pt}
+
+{\Large\bfseries 5.2 Scope for future work \\}
+
+{\normalsize  Some potential areas of focus include: \\}
+
+\begin{itemize}
+        \item {\bfseries Real-Time Commenting: } Integrate a real-time commenting system, allowing users to discuss and provide feedback on specific sections of the document, enhancing collaboration and communication.
+
+    \item {\bfseries Version Control:  } Implement version control capabilities to track document revisions, enabling users to revert to previous states and facilitating better document management.
+    
+    \item {\bfseries Rich Text Editing:  } Enhance the text editor with rich formatting options such as bold, italic, and bullet points, providing a more comprehensive and user-friendly editing environment.  
+\end{itemize}
+    
+\vspace{25pt}
+
+{\Large\bfseries 5.3 Conclusion \\}
+
+{\normalsize  In summary, the completion of the Real-Time Editing Web App using the MERN stack and Socket.IO is a significant accomplishment. It offers a dynamic and interactive platform for collaborative document editing, showcasing a smooth user experience and real-time synchronization.}
+
+\vspace{10pt}
+{ \normalsize
+The project not only demonstrates technical success but also addresses user needs effectively. It highlights our dedication to security, user-friendliness, and innovation in digital collaboration.}
+
+\vspace{10pt}
+{\normalsize
+     As we look to the future, the project's adaptable architecture provides a solid foundation for further enhancements and feature additions. The Real-Time Editing Web Application stands as a testament to effective teamwork, innovative technology, and responsive development, addressing the evolving landscape of collaborative digital environments. 
+}
+
+\vspace{25pt}
+
+
+
+\end{document}
